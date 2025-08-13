@@ -18,5 +18,7 @@ func requestToken(client_id string, client_secret string) tokenStruct {
 		panic(err)
 	}
 
+	req, err := http.NewRequest()
+
 	return accessToken
 }
